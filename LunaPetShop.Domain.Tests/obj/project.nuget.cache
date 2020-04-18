@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "tQR16SFld4tTHc02JlxS1tuem4nuOzHEz2eSFhGKZmA3o+iLWho8h10nGyKJj+9njfOucLdCbOOhw/Y9iy76fA==",
+  "dgSpecHash": "1tPsx5qiWbBsGgqv9oTbHrreTnw1Hc9suaYGfaWc/tNHfy7RirAfuJKxPiM2brh0DWM+KVawS+cOv4cEs98BeA==",
   "success": true,
   "projectFilePath": "C:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain.Tests\\LunaPetShop.Domain.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rslai\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",
+    "C:\\Users\\rslai\\.nuget\\packages\\flunt\\1.0.4\\flunt.1.0.4.nupkg.sha512",
     "C:\\Users\\rslai\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",
     "C:\\Users\\rslai\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
     "C:\\Users\\rslai\\.nuget\\packages\\microsoft.net.test.sdk\\16.5.0\\microsoft.net.test.sdk.16.5.0.nupkg.sha512",

@@ -92,3 +92,6 @@ C:\Pessoal\Dev\.NET\LunaPetShop\LunaPetShop.Domain.Tests\obj\Debug\netcoreapp3.1
 C:\Pessoal\Dev\.NET\LunaPetShop\LunaPetShop.Domain.Tests\obj\Debug\netcoreapp3.1\LunaPetShop.Domain.Tests.dll
 C:\Pessoal\Dev\.NET\LunaPetShop\LunaPetShop.Domain.Tests\obj\Debug\netcoreapp3.1\LunaPetShop.Domain.Tests.pdb
 C:\Pessoal\Dev\.NET\LunaPetShop\LunaPetShop.Domain.Tests\obj\Debug\netcoreapp3.1\LunaPetShop.Domain.Tests.genruntimeconfig.cache
+C:\Pessoal\Dev\.NET\LunaPetShop\LunaPetShop.Domain.Tests\bin\Debug\netcoreapp3.1\Flunt.dll
+C:\Pessoal\Dev\.NET\LunaPetShop\LunaPetShop.Domain.Tests\bin\Debug\netcoreapp3.1\LunaPetShop.Domain.dll
+C:\Pessoal\Dev\.NET\LunaPetShop\LunaPetShop.Domain.Tests\bin\Debug\netcoreapp3.1\LunaPetShop.Domain.pdb
