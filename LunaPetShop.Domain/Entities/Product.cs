@@ -1,6 +1,6 @@
 namespace LunaPetShop.Domain.Entities
 {
-    public class Products : Entity
+    public class Product : Entity
     {
     public string Name { get; set; }
     public double Price { get; set; }

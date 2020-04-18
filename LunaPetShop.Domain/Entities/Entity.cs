@@ -5,7 +5,6 @@ namespace LunaPetShop.Domain.Entities {
         public Entity () {
             this.Id = Guid.NewGuid();
         }
-        
         public Guid Id { get; set; }
     }
 }
