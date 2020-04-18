@@ -1,0 +1,9 @@
+C:\Pessoal\Dev\.NET\LunaPetShop\LunaPetShop.Domain\bin\Debug\netstandard2.0\LunaPetShop.Domain.deps.json
+C:\Pessoal\Dev\.NET\LunaPetShop\LunaPetShop.Domain\bin\Debug\netstandard2.0\LunaPetShop.Domain.dll
+C:\Pessoal\Dev\.NET\LunaPetShop\LunaPetShop.Domain\bin\Debug\netstandard2.0\LunaPetShop.Domain.pdb
+C:\Pessoal\Dev\.NET\LunaPetShop\LunaPetShop.Domain\obj\Debug\netstandard2.0\LunaPetShop.Domain.csprojAssemblyReference.cache
+C:\Pessoal\Dev\.NET\LunaPetShop\LunaPetShop.Domain\obj\Debug\netstandard2.0\LunaPetShop.Domain.csproj.CoreCompileInputs.cache
+C:\Pessoal\Dev\.NET\LunaPetShop\LunaPetShop.Domain\obj\Debug\netstandard2.0\LunaPetShop.Domain.AssemblyInfoInputs.cache
+C:\Pessoal\Dev\.NET\LunaPetShop\LunaPetShop.Domain\obj\Debug\netstandard2.0\LunaPetShop.Domain.AssemblyInfo.cs
+C:\Pessoal\Dev\.NET\LunaPetShop\LunaPetShop.Domain\obj\Debug\netstandard2.0\LunaPetShop.Domain.dll
+C:\Pessoal\Dev\.NET\LunaPetShop\LunaPetShop.Domain\obj\Debug\netstandard2.0\LunaPetShop.Domain.pdb
