@@ -5,6 +5,10 @@ namespace LunaPetShop.Domain.Entities
 {
     public class Order : Entity
     {
+        public Order()
+        {
+            this.Products = new List<Product>();
+        }
         public Guid UserId { get; private set; }
 
         public List<Product> Products { get; private set; }
