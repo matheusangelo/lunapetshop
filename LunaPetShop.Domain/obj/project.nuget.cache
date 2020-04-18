@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "v7wPGLEC5z0LHujkXEKjR0Ec8TnqtyvFV0GJMVJb5z+gA4E8JIvTB+iYpM+sIUVkPxnWW54ozyswzkUtQN2v9g==",
+  "dgSpecHash": "mVBKbS2FI+s1LGvU4VSFVAAOc5Sx65l4k2/WNlXhCIvs+cvhRzh2Dx1hgx/IHKAuhnpDcmBnTwLMEqgNypbpIw==",
   "success": true,
   "projectFilePath": "C:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain\\LunaPetShop.Domain.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\rslai\\.nuget\\packages\\flunt\\1.0.4\\flunt.1.0.4.nupkg.sha512",
     "C:\\Users\\rslai\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\rslai\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
