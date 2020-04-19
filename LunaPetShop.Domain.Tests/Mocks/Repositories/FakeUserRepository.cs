@@ -8,22 +8,19 @@ namespace LunaPetShop.Domain.Tests.Mocks.Respositories
     {
         public void AddUser(User user)
         {
-            throw new NotImplementedException();
         }
 
         public void DeleteUser(User user)
         {
-            throw new NotImplementedException();
         }
 
         public User GetByEmail(string Email)
         {
-            throw new NotImplementedException();
+            return new User("","","","");
         }
 
         public void UpdateUser(User user)
         {
-            throw new NotImplementedException();
         }
     }
 }
