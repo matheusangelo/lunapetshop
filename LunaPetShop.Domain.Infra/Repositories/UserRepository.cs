@@ -15,27 +15,27 @@ namespace LunaPetShop.Domain.Infra.Respositories
         {
             _lunaPetShopContext = lunaPetShopContext;
         }
-        public void addUser(User user)
+        public void AddUser(User user)
         {
             _lunaPetShopContext.users.Add(user);
             _lunaPetShopContext.SaveChanges();
         }
 
-        public void deleteUser(User user)
+        public void DeleteUser(User user)
         {
             _lunaPetShopContext.users.Remove(user);
             _lunaPetShopContext.SaveChanges();
         }
 
-        public User getById(Guid Id)
+        public User GetById(Guid Id)
         {
             return _lunaPetShopContext.users
-                                        .AsNoTracking()
-                                        .Where(UserQuery.GetUserById(Id))
-                                        .FirstOrDefault();
+                                      .AsNoTracking()
+                                      .Where(UserQuery.GetUserById(Id))
+                                      .FirstOrDefault();
         }
 
-        public void updateUser(User user)
+        public void UpdateUser(User user)
         {
             _lunaPetShopContext.Entry(user).State = EntityState.Modified;
             _lunaPetShopContext.SaveChanges();

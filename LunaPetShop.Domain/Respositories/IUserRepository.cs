@@ -5,10 +5,10 @@ namespace LunaPetShop.Domain.Repository
 {
     public interface IUserRepository
     {
-        User getById(Guid Id);
-        void addUser(User user);
-        void deleteUser(User user);
-        void updateUser(User user);
+        User GetById(Guid Id);
+        void AddUser(User user);
+        void DeleteUser(User user);
+        void UpdateUser(User user);
 
     }
 }
