@@ -31,7 +31,7 @@ namespace LunaPetShop.Domain.Infra.Respositories
         {
             return _lunaPetShopContext.users
                                       .AsNoTracking()
-                                      .Where(UserQuery.GetUserById(Email))
+                                      .Where(UserQuery.GetUserByEmail(Email))
                                       .FirstOrDefault();
         }
 

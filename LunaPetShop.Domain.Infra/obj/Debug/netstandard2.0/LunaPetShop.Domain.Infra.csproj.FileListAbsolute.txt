@@ -7,3 +7,6 @@ C:\Pessoal\Dev\.NET\LunaPetShop\LunaPetShop.Domain.Infra\obj\Debug\netstandard2.
 C:\Pessoal\Dev\.NET\LunaPetShop\LunaPetShop.Domain.Infra\obj\Debug\netstandard2.0\LunaPetShop.Domain.Infra.AssemblyInfo.cs
 C:\Pessoal\Dev\.NET\LunaPetShop\LunaPetShop.Domain.Infra\obj\Debug\netstandard2.0\LunaPetShop.Domain.Infra.dll
 C:\Pessoal\Dev\.NET\LunaPetShop\LunaPetShop.Domain.Infra\obj\Debug\netstandard2.0\LunaPetShop.Domain.Infra.pdb
+C:\Pessoal\Dev\.NET\LunaPetShop\LunaPetShop.Domain.Infra\bin\Debug\netstandard2.0\LunaPetShop.Domain.dll
+C:\Pessoal\Dev\.NET\LunaPetShop\LunaPetShop.Domain.Infra\bin\Debug\netstandard2.0\LunaPetShop.Domain.pdb
+C:\Pessoal\Dev\.NET\LunaPetShop\LunaPetShop.Domain.Infra\obj\Debug\netstandard2.0\LunaPetShop.Domain.Infra.csproj.CopyComplete

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MmwSKUD0l/g+RtBWpzyHzcsJR6U4lq+e4jVtBlc1uV91VJ5nbQeIJ3SE3SOo3QTiWHS6IELnn6p+aDcfyQGblw==",
+  "dgSpecHash": "A/9y0NXV0X8QivQIdRF+fUTLAqzL4roj3C2nZ6jTnYurG1DLHuvi1/yvH7Y241v4/VqsEkRZ2IsZ3Ya8Mb29Iw==",
   "success": true,
-  "projectFilePath": "c:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain.Infra\\LunaPetShop.Domain.Infra.csproj",
+  "projectFilePath": "C:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain.Infra\\LunaPetShop.Domain.Infra.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rslai\\.nuget\\packages\\flunt\\1.0.4\\flunt.1.0.4.nupkg.sha512",
     "C:\\Users\\rslai\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",

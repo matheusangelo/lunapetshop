@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0V6QuzzoS2/Pkz1A80fk+TmE6PuPiKgpR34SZLh0lay2AtvZf3z9q/jDhWrmxKkwvxE0sr65hHU3IKG7FkxW5g==",
+  "dgSpecHash": "7YnxGSdUm5nSsEXSazACUvIuz9oDC3TBWaTmU3sH4QJFlPpJIKy/3G4NfGzJ8em6JvLg+ZQSl4C8Gi7A3ZHcmw==",
   "success": true,
-  "projectFilePath": "c:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain.Api\\LunaPetShop.Domain.Api.csproj",
+  "projectFilePath": "C:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain.Api\\LunaPetShop.Domain.Api.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
