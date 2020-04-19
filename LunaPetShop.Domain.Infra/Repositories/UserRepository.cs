@@ -1,28 +1,44 @@
 using System;
+using System.Linq;
+using LunaPetShop.Domain.Entities;
+using LunaPetShop.Domain.Infra.Contexts;
+using LunaPetShop.Domain.Queries;
 using LunaPetShop.Domain.Repository;
+using Microsoft.EntityFrameworkCore;
 
 namespace LunaPetShop.Domain.Infra.Respositories
 {
     public class UserRepository : IUserRepository
     {
-        public void addUser()
+        private readonly LunaPetShopContext _lunaPetShopContext;
+        public UserRepository(LunaPetShopContext lunaPetShopContext)
         {
-            throw new NotImplementedException();
+            _lunaPetShopContext = lunaPetShopContext;
+        }
+        public void addUser(User user)
+        {
+            _lunaPetShopContext.users.Add(user);
+            _lunaPetShopContext.SaveChanges();
         }
 
-        public void deleteUser()
+        public void deleteUser(User user)
         {
-            throw new NotImplementedException();
+            _lunaPetShopContext.users.Remove(user);
+            _lunaPetShopContext.SaveChanges();
         }
 
-        public void getById(Guid Id)
+        public User getById(Guid Id)
         {
-            throw new NotImplementedException();
+            return _lunaPetShopContext.users
+                                        .AsNoTracking()
+                                        .Where(UserQuery.GetUserById(Id))
+                                        .FirstOrDefault();
         }
 
-        public void updateUser(Guid Id)
+        public void updateUser(User user)
         {
-            throw new NotImplementedException();
+            _lunaPetShopContext.Entry(user).State = EntityState.Modified;
+            _lunaPetShopContext.SaveChanges();
         }
     }
 }

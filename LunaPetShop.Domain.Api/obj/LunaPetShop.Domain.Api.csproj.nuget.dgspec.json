@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain.Api\\LunaPetShop.Domain.Api.csproj": {}
+    "c:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain.Api\\LunaPetShop.Domain.Api.csproj": {}
   },
   "projects": {
-    "C:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain.Api\\LunaPetShop.Domain.Api.csproj": {
+    "c:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain.Api\\LunaPetShop.Domain.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain.Api\\LunaPetShop.Domain.Api.csproj",
+        "projectUniqueName": "c:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain.Api\\LunaPetShop.Domain.Api.csproj",
         "projectName": "LunaPetShop.Domain.Api",
-        "projectPath": "C:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain.Api\\LunaPetShop.Domain.Api.csproj",
+        "projectPath": "c:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain.Api\\LunaPetShop.Domain.Api.csproj",
         "packagesPath": "C:\\Users\\rslai\\.nuget\\packages\\",
-        "outputPath": "C:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain.Api\\obj\\",
+        "outputPath": "c:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rslai\\AppData\\Roaming\\NuGet\\NuGet.Config",

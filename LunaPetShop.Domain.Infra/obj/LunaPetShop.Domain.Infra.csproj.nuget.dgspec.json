@@ -1,17 +1,80 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain.Infra\\LunaPetShop.Domain.Infra.csproj": {}
+    "c:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain.Infra\\LunaPetShop.Domain.Infra.csproj": {}
   },
   "projects": {
-    "C:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain.Infra\\LunaPetShop.Domain.Infra.csproj": {
+    "c:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain.Infra\\LunaPetShop.Domain.Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain.Infra\\LunaPetShop.Domain.Infra.csproj",
+        "projectUniqueName": "c:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain.Infra\\LunaPetShop.Domain.Infra.csproj",
         "projectName": "LunaPetShop.Domain.Infra",
-        "projectPath": "C:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain.Infra\\LunaPetShop.Domain.Infra.csproj",
+        "projectPath": "c:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain.Infra\\LunaPetShop.Domain.Infra.csproj",
         "packagesPath": "C:\\Users\\rslai\\.nuget\\packages\\",
-        "outputPath": "C:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain.Infra\\obj\\",
+        "outputPath": "c:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain.Infra\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\rslai\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "c:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain\\LunaPetShop.Domain.csproj": {
+                "projectPath": "c:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain\\LunaPetShop.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "c:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain\\LunaPetShop.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "c:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain\\LunaPetShop.Domain.csproj",
+        "projectName": "LunaPetShop.Domain",
+        "projectPath": "c:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain\\LunaPetShop.Domain.csproj",
+        "packagesPath": "C:\\Users\\rslai\\.nuget\\packages\\",
+        "outputPath": "c:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rslai\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -43,6 +106,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "flunt": {
+              "target": "Package",
+              "version": "[1.0.4, )"
             }
           },
           "imports": [
