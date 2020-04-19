@@ -9,6 +9,15 @@ namespace LunaPetShop.Domain.Entities
         {
             this.Pets = new List<Pet>();
         }
+
+        public User(string name, string surName, string email, string password)
+        {
+            Name = name;
+            SurName = surName;
+            Email = email;
+            Password = password;
+        }
+
         public string Name { get; private set; }
         public string SurName { get; set; }
         public string Email { get; set; }

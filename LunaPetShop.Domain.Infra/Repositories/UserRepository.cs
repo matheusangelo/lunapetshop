@@ -27,11 +27,11 @@ namespace LunaPetShop.Domain.Infra.Respositories
             _lunaPetShopContext.SaveChanges();
         }
 
-        public User GetById(Guid Id)
+        public User GetByEmail(string Email)
         {
             return _lunaPetShopContext.users
                                       .AsNoTracking()
-                                      .Where(UserQuery.GetUserById(Id))
+                                      .Where(UserQuery.GetUserById(Email))
                                       .FirstOrDefault();
         }
 
