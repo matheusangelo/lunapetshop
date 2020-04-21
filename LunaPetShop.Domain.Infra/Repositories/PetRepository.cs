@@ -26,8 +26,13 @@ namespace LunaPetShop.Domain.Infra.Repository
 
         }
 
-        public void DeletePet(Pet pet)
+        public void DeletePet(Guid Id)
         {
+            var pet = _lunaPetShopContext.pets
+                                         .AsNoTracking()
+                                         .Where(PetQuery.GetPetbyId(Id))
+                                         .FirstOrDefault();
+
             _lunaPetShopContext.pets.Remove(pet);
             _lunaPetShopContext.SaveChanges();
         }

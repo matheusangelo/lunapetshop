@@ -19,22 +19,13 @@ namespace LunaPetShop.Domain.Handlers
 
             if (command.Invalid)
             {
-                return new CommandResult("Command Invalid creating a Pet", false, command);
+                return new CommandResult("Command Invalid delete a Pet", false, command);
             }
+            
 
-            var pet = new Pet(command.Name,
-                              command.Weigth,
-                              command.Age,
-                              command.Sex,
-                              command.Breed,
-                              command.Castrated,
-                              command.Size,
-                              command.User.Id,
-                              command.User);
+            _petRepository.DeletePet(command.Id);
 
-            _petRepository.AddPet(pet);
-
-            return new CommandResult("Pet Created", true, command);
+            return new CommandResult("Pet Deleted", true, command);
         }
     }
 }

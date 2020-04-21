@@ -12,7 +12,7 @@ namespace LunaPetShop.Domain.Repository
 
         void AddPet(Pet pet);
 
-        void DeletePet(Pet pet);
+        void DeletePet(Guid Id);
         void UpdatePet(Pet pet);
 
     }
