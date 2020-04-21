@@ -1,3 +1,4 @@
+using System;
 using Flunt.Notifications;
 using Flunt.Validations;
 using LunaPetShop.Domain.Commands.Contracts;
@@ -7,6 +8,20 @@ namespace LunaPetShop.Domain.Commands
 {
     public class CommandUpdatePet : Notifiable, ICommand
     {
+        public CommandUpdatePet(Guid id, string name, double weigth, int age, string sex, string breed, bool castrated, double size, User user)
+        {
+            Id = id;
+            Name = name;
+            Weigth = weigth;
+            Age = age;
+            Sex = sex;
+            Breed = breed;
+            Castrated = castrated;
+            Size = size;
+            User = user;
+        }
+
+        public Guid Id { get; set; }
         public string Name { get; set; }
         public double Weigth { get; set; }
         public int Age { get; set; }
