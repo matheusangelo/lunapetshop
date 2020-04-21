@@ -11,5 +11,8 @@ namespace LunaPetShop.Domain.Infra.Contexts
         }
 
         public DbSet<User> users {get; set;}
+
+        public DbSet<Pet> pets {get; set;}
+
     }
 }

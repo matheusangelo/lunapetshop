@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using LunaPetShop.Domain.Entities;
 using LunaPetShop.Domain.Infra.Contexts;
+using LunaPetShop.Domain.Queries;
 using LunaPetShop.Domain.Repository;
 using Microsoft.EntityFrameworkCore;
 
@@ -16,26 +18,35 @@ namespace LunaPetShop.Domain.Infra.Repository
         {
             _lunaPetShopContext = lunaPetShopContext;
         }
-        
+
         public void DeletePet(Pet pet)
         {
-            _lunaPetShopContext.Remove(pet);
+            _lunaPetShopContext.pets.Remove(pet);
             _lunaPetShopContext.SaveChanges();
         }
 
         public List<Pet> GetAllByEmail(string Email)
         {
-            throw new NotImplementedException();
+            return _lunaPetShopContext.pets
+                                .AsNoTracking()
+                                .Where(PetQuery.GetAllByEmail(Email))
+                                .ToList();
         }
 
         public Pet GetPetById(Guid Id)
         {
-            throw new NotImplementedException();
+            return _lunaPetShopContext.pets
+                                      .AsNoTracking()
+                                      .Where(PetQuery.GetPetbyId(Id))
+                                      .FirstOrDefault();
         }
 
         public List<Pet> GetPetByUserId(Guid Id)
         {
-            throw new NotImplementedException();
+            return _lunaPetShopContext.pets
+                                      .AsNoTracking()
+                                      .Where(PetQuery.GetAllByUserId(Id))
+                                      .ToList();
         }
 
         public void UpdatePet(Pet pet)
