@@ -5,14 +5,14 @@ using LunaPetShop.Domain.Repository;
 
 namespace LunaPetShop.Domain.Handlers
 {
-    public class UpdatePetHandler : IHandler<CommandCreatePet>
+    public class UpdatePetHandler : IHandler<CommandUpdatePet>
     {
         private readonly IPetRepository _petRepository;
         public UpdatePetHandler(IPetRepository petRepository)
         {
             _petRepository = petRepository;
         }
-        public ICommandResult handle(CommandCreatePet command)
+        public ICommandResult handle(CommandUpdatePet command)
         {
             command.Validate();
 

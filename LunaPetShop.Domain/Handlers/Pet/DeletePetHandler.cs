@@ -6,14 +6,14 @@ using LunaPetShop.Domain.Repository;
 
 namespace LunaPetShop.Domain.Handlers
 {
-    public class DeletePetHandler : IHandler<CommandCreatePet>
+    public class DeletePetHandler : IHandler<CommandDeletePet>
     {
         private readonly IPetRepository _petRepository;
         public DeletePetHandler(IPetRepository petRepository)
         {
             _petRepository = petRepository;
         }
-        public ICommandResult handle(CommandCreatePet command)
+        public ICommandResult handle(CommandDeletePet command)
         {
             command.Validate();
 
@@ -23,7 +23,7 @@ namespace LunaPetShop.Domain.Handlers
             }
             
 
-            _petRepository.DeletePet(command.Id);
+            _petRepository.DeletePet(command.Pet.Id);
 
             return new CommandResult("Pet Deleted", true, command);
         }
