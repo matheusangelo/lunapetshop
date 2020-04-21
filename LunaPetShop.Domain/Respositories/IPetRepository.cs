@@ -10,7 +10,7 @@ namespace LunaPetShop.Domain.Repository
         List<Pet> GetPetByUserId(Guid Id);
         Pet GetPetById(Guid Id);
 
-        void AddPet(Pet Id);
+        void AddPet(Pet pet);
 
         void DeletePet(Pet pet);
         void UpdatePet(Pet pet);

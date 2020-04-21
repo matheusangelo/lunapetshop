@@ -19,6 +19,13 @@ namespace LunaPetShop.Domain.Infra.Repository
             _lunaPetShopContext = lunaPetShopContext;
         }
 
+        public void AddPet(Pet pet)
+        {
+            _lunaPetShopContext.pets.Add(pet);
+            _lunaPetShopContext.SaveChanges();
+
+        }
+
         public void DeletePet(Pet pet)
         {
             _lunaPetShopContext.pets.Remove(pet);
