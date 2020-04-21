@@ -13,7 +13,6 @@ namespace LunaPetShop.Domain.Entities
 
         public Product Product { get; private set; }
 
-
         public double getTotalPrize(List<Product> products)
         {
             double total = 0;
