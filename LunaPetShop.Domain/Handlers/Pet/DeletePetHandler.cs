@@ -23,7 +23,7 @@ namespace LunaPetShop.Domain.Handlers
             }
             
 
-            _petRepository.DeletePet(command.Pet.Id);
+            _petRepository.DeletePet(command.Pet);
 
             return new CommandResult("Pet Deleted", true, command);
         }
