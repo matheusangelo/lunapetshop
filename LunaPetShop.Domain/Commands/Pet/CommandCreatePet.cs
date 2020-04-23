@@ -8,6 +8,11 @@ namespace LunaPetShop.Domain.Commands
 {
     public class CommandCreatePet : Notifiable, ICommand
     {
+
+        public CommandCreatePet()
+        {
+            
+        }
         public CommandCreatePet(string name, double weigth, int age, string sex, string breed, bool castrated, double size, User user)
         {
             Name = name;
