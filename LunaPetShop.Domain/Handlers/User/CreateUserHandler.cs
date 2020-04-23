@@ -1,5 +1,6 @@
 using LunaPetShop.Domain.Commands;
 using LunaPetShop.Domain.Commands.Contracts;
+using LunaPetShop.Domain.Entities;
 using LunaPetShop.Domain.Handlers.Contracts;
 using LunaPetShop.Domain.Repository;
 
@@ -22,6 +23,15 @@ namespace LunaPetShop.Domain.Handlers
             {
                 return new CommandResult("Invalid values request", false, command);
             }
+
+            var user = new User();
+
+            user.Name = command.Name;
+            user.Email = command.Email;
+            user.SurName = command.SurName;
+            user.Password = command.Password;
+
+            _userRepository.AddUser(user);
 
             return new CommandResult("User created with sucess", true, command);
         }
