@@ -18,3 +18,14 @@ C:\Pessoal\Dev\.NET\LunaPetShop\LunaPetShop.Domain.Api\obj\Debug\netcoreapp3.1\s
 C:\Pessoal\Dev\.NET\LunaPetShop\LunaPetShop.Domain.Api\obj\Debug\netcoreapp3.1\LunaPetShop.Domain.Api.dll
 C:\Pessoal\Dev\.NET\LunaPetShop\LunaPetShop.Domain.Api\obj\Debug\netcoreapp3.1\LunaPetShop.Domain.Api.pdb
 C:\Pessoal\Dev\.NET\LunaPetShop\LunaPetShop.Domain.Api\obj\Debug\netcoreapp3.1\LunaPetShop.Domain.Api.genruntimeconfig.cache
+C:\Pessoal\Dev\.NET\LunaPetShop\LunaPetShop.Domain.Api\bin\Debug\netcoreapp3.1\Flunt.dll
+C:\Pessoal\Dev\.NET\LunaPetShop\LunaPetShop.Domain.Api\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Pessoal\Dev\.NET\LunaPetShop\LunaPetShop.Domain.Api\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Pessoal\Dev\.NET\LunaPetShop\LunaPetShop.Domain.Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Pessoal\Dev\.NET\LunaPetShop\LunaPetShop.Domain.Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Pessoal\Dev\.NET\LunaPetShop\LunaPetShop.Domain.Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Pessoal\Dev\.NET\LunaPetShop\LunaPetShop.Domain.Api\bin\Debug\netcoreapp3.1\LunaPetShop.Domain.dll
+C:\Pessoal\Dev\.NET\LunaPetShop\LunaPetShop.Domain.Api\bin\Debug\netcoreapp3.1\LunaPetShop.Domain.Infra.dll
+C:\Pessoal\Dev\.NET\LunaPetShop\LunaPetShop.Domain.Api\bin\Debug\netcoreapp3.1\LunaPetShop.Domain.pdb
+C:\Pessoal\Dev\.NET\LunaPetShop\LunaPetShop.Domain.Api\bin\Debug\netcoreapp3.1\LunaPetShop.Domain.Infra.pdb
+C:\Pessoal\Dev\.NET\LunaPetShop\LunaPetShop.Domain.Api\obj\Debug\netcoreapp3.1\LunaPetShop.Domain.Api.csproj.CopyComplete

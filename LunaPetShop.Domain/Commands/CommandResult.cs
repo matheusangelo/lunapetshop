@@ -3,7 +3,7 @@ using LunaPetShop.Domain.Commands.Contracts;
 
 namespace LunaPetShop.Domain.Commands
 {
-    public class CommandResult : Notifiable, ICommandResult
+    public class CommandResult : ICommandResult
     {
         public CommandResult(string message, bool success, object data)
         {

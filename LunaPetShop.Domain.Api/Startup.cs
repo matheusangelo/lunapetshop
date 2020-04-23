@@ -16,6 +16,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore.InMemory;
 using Microsoft.EntityFrameworkCore;
 using LunaPetShop.Domain.Handlers;
+using LunaPetShop.Domain.Infra.Respositories;
 
 namespace LunaPetShop.Domain.Api
 {
@@ -42,6 +43,8 @@ namespace LunaPetShop.Domain.Api
 
             //Contracts
             services.AddScoped<IPetRepository, PetRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

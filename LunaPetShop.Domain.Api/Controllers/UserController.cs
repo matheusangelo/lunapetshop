@@ -11,21 +11,19 @@ using Microsoft.Extensions.Logging;
 namespace LunaPetShop.Domain.Api.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("v1/user")]
     public class UserController : ControllerBase
     {
-        private readonly ILogger<UserController> _logger;
-
-        public UserController(ILogger<UserController> logger)
-        {
-            _logger = logger;
-        }
-
         [HttpPost]
-        public ActionResult<ICommandResult> Post([FromBody] CommandCreateUser command,
+        public async Task<ActionResult> Post([FromBody] CommandCreateUser command,
                                                  [FromServices] CreateUserHandler handler)
-        {
-            return (CommandResult)handler.handle(command);
+        {  
+            var result = (CommandResult)handler.handle(command);
+
+            if (!result.Success)
+                return BadRequest(result);
+
+            return Ok(result);
         }
     }
 }
