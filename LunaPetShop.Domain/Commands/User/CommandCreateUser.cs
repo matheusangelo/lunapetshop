@@ -18,14 +18,14 @@ namespace LunaPetShop.Domain.Commands
             SurName = surName;
             Email = email;
             Password = password;
-            // Pets = new List<Pet>();
+            Pets = new List<Pet>();
         }
 
         public string Name { get;  set; }
         public string SurName { get; set; }
         public string Email { get; set; }
         public string Password { get;  set; }
-        // public List<Pet> Pets { get; set; }
+        public List<Pet> Pets { get; set; }
 
         public void Validate()
         {

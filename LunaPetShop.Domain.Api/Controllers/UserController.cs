@@ -16,7 +16,7 @@ namespace LunaPetShop.Domain.Api.Controllers
     {
         [HttpPost]
         public async Task<ActionResult> Post([FromBody] CommandCreateUser command,
-                                                 [FromServices] CreateUserHandler handler)
+                                             [FromServices] CreateUserHandler handler)
         {  
             var result = (CommandResult)handler.handle(command);
 
