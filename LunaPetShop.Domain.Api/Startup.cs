@@ -2,6 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using LunaPetShop.Domain.Infra.Contexts;
+using LunaPetShop.Domain.Infra.Repository;
+using LunaPetShop.Domain.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -10,6 +13,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.EntityFrameworkCore.InMemory;
+using Microsoft.EntityFrameworkCore;
+using LunaPetShop.Domain.Handlers;
 
 namespace LunaPetShop.Domain.Api
 {
@@ -26,6 +32,16 @@ namespace LunaPetShop.Domain.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            // services.AddDbContext<LunaPetShopContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("connectionString")));
+            services.AddDbContext<LunaPetShopContext>(x => x.UseInMemoryDatabase("database"));
+
+            //Services
+            services.AddScoped<CreateUserHandler, CreateUserHandler>();
+
+
+            //Contracts
+            services.AddScoped<IPetRepository, PetRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
