@@ -11,6 +11,10 @@ namespace LunaPetShop.Domain.Infra.Configurations
         {
             builder.ToTable("PET");
 
+            builder.Property(p => p.Id)
+                    .IsRequired()
+                    .HasColumnName("ID");
+
             builder.Property(p => p.Name)
                     .HasColumnType("varchar(150)")
                     .IsRequired()
@@ -23,6 +27,10 @@ namespace LunaPetShop.Domain.Infra.Configurations
             builder.Property(p => p.Age)
                     .IsRequired()
                     .HasColumnName("AGE");
+
+            builder.Property(p => p.UserId)
+                    .IsRequired()
+                    .HasColumnName("USER_ID");
 
             builder.Property(p => p.Sex)
                     .HasColumnName("SEX");

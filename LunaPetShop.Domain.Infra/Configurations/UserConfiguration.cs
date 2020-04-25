@@ -11,6 +11,10 @@ namespace LunaPetShop.Domain.Infra.Configurations
         {
             builder.ToTable("USER");
 
+        
+            builder.Property(p => p.Id)
+                    .HasColumnName("ID");
+
             builder.Property(p => p.Name)
                     .HasColumnType("varchar(150)")
                     .IsRequired()
