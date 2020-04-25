@@ -35,8 +35,7 @@ namespace LunaPetShop.Domain.Handlers
                               command.Breed,
                               command.Castrated,
                               command.Size,
-                              user.Id,
-                              user);
+                              user.Id);
 
             _petRepository.AddPet(pet);
 

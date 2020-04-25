@@ -8,7 +8,7 @@ namespace LunaPetShop.Domain.Entities
         {
             
         }
-        public Pet(string name, double weigth, int age, string sex, string breed, bool castrated, double size, Guid userId, User user)
+        public Pet(string name, double weigth, int age, string sex, string breed, bool castrated, double size, Guid userId)
         {
             Name = name;
             Weigth = weigth;
@@ -18,7 +18,6 @@ namespace LunaPetShop.Domain.Entities
             Castrated = castrated;
             Size = size;
             UserId = userId;
-            User = user;
         }
 
         public string Name { get; set; }
