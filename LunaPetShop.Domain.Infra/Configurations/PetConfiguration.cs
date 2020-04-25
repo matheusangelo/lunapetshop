@@ -35,7 +35,6 @@ namespace LunaPetShop.Domain.Infra.Configurations
                     .HasColumnName("CASTRATED");
 
             builder.Property(p => p.Size)
-                    .HasColumnType("bit")
                     .HasColumnName("SIZE");
 
                 //fluent api relationship

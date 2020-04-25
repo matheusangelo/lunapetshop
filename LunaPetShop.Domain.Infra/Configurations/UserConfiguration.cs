@@ -27,5 +27,6 @@ namespace LunaPetShop.Domain.Infra.Configurations
             builder.Property(p => p.Password)
                     .HasColumnName("PASSWORD");
 
+        }
     }
 }

@@ -34,8 +34,8 @@ namespace LunaPetShop.Domain.Api
         {
             services.AddControllers();
 
-            // services.AddDbContext<LunaPetShopContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("connectionString")));
-            services.AddDbContext<LunaPetShopContext>(x => x.UseInMemoryDatabase("database"));
+            services.AddDbContext<LunaPetShopContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("connectionString")));
+            // services.AddDbContext<LunaPetShopContext>(x => x.UseInMemoryDatabase("database"));
 
             //Services
             services.AddScoped<CreateUserHandler, CreateUserHandler>();
