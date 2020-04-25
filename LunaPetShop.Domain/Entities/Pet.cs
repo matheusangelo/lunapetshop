@@ -4,6 +4,10 @@ namespace LunaPetShop.Domain.Entities
 {
     public class Pet : Entity
     {
+        public Pet()
+        {
+            
+        }
         public Pet(string name, double weigth, int age, string sex, string breed, bool castrated, double size, Guid userId, User user)
         {
             Name = name;

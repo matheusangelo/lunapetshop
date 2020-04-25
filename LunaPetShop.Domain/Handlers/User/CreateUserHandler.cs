@@ -33,7 +33,7 @@ namespace LunaPetShop.Domain.Handlers
 
             _userRepository.AddUser(user);
 
-            return new CommandResult("User created with sucess", true, command);
+            return new CommandResult("User created with sucess", true, user);
         }
     }
 }

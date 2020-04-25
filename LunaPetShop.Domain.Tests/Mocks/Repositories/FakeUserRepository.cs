@@ -19,6 +19,11 @@ namespace LunaPetShop.Domain.Tests.Mocks.Respositories
             return new User("","","","");
         }
 
+        public User GetById(Guid Id)
+        {
+            return new User("","","","");
+        }
+
         public void UpdateUser(User user)
         {
         }

@@ -35,6 +35,15 @@ namespace LunaPetShop.Domain.Infra.Respositories
                                       .FirstOrDefault();
         }
 
+        public User GetById(Guid Id)
+        {
+            return _lunaPetShopContext.users
+                                      .AsNoTracking()
+                                      .Where(x=>x.Id == Id)
+                                      .FirstOrDefault();
+                                      
+        }
+
         public void UpdateUser(User user)
         {
             _lunaPetShopContext.Entry(user).State = EntityState.Modified;
