@@ -14,8 +14,8 @@ namespace LunaPetShop.Domain.Tests.Mocks.Queries
             var userx = new User("Matheus", "Angelo", "matheusangelo@hotmail.com", "102030");
             var usery = new User("Matheus", "Angelo", "matheus@hotmail.com", "102030");
           
-            var pet = new Pet("Luna",10,1,"Woman","Sirium",false,10,Guid.NewGuid(),userx);
-            var pet2 = new Pet("Banguela",10,1,"Woman","Sirium",false,10,Guid.NewGuid(),usery);
+            var pet = new Pet("Luna",10,1,"Woman","Sirium",false,10,userx.Id,userx);
+            var pet2 = new Pet("Banguela",10,1,"Woman","Sirium",false,10,usery.Id,usery);
 
             pets.Add(pet);
             pets.Add(pet2); 
