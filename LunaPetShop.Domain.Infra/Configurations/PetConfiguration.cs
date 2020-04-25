@@ -9,7 +9,7 @@ namespace LunaPetShop.Domain.Infra.Configurations
     {
         public void Configure(EntityTypeBuilder<Pet> builder)
         {
-            builder.ToTable("TODO");
+            builder.ToTable("PET");
 
             builder.Property(p => p.Name)
                     .HasColumnType("varchar(150)")
