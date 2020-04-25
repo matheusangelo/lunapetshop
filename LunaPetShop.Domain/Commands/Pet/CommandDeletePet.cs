@@ -1,3 +1,4 @@
+using System;
 using Flunt.Notifications;
 using Flunt.Validations;
 using LunaPetShop.Domain.Commands.Contracts;
@@ -7,17 +8,17 @@ namespace LunaPetShop.Domain.Commands
 {
     public class CommandDeletePet : Notifiable, ICommand
     {
-        public CommandDeletePet(Pet pet)
+        public CommandDeletePet(Guid petId)
         {
-            Pet = pet;
+            Id = petId;
         }
 
-        public Pet Pet { get; set; }
+        public Guid Id { get; set; }
         public void Validate()
         {
             AddNotifications(
                     new Contract()
-                    .IsNotNull(Pet,"Pet","Pet not null")
+                    .IsNotNull(Id,"Pet","Pet not null")
                 );
         }
     }

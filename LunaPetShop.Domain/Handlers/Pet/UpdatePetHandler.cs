@@ -30,11 +30,10 @@ namespace LunaPetShop.Domain.Handlers
             pet.Breed = command.Breed ;
             pet.Castrated = command.Castrated ;
             pet.Size = command.Size ;
-            pet.User = command.User ;
 
             _petRepository.UpdatePet(pet);
 
-            return new CommandResult("Pet Updated", true, command);
+            return new CommandResult("Pet Updated", true, pet);
         }
     }
 }

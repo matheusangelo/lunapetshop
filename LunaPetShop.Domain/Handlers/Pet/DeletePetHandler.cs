@@ -22,8 +22,9 @@ namespace LunaPetShop.Domain.Handlers
                 return new CommandResult("Command Invalid delete a Pet", false, command);
             }
             
-
-            _petRepository.DeletePet(command.Pet);
+            var pet = _petRepository.GetPetById(command.Id);
+            
+            _petRepository.DeletePet(pet);
 
             return new CommandResult("Pet Deleted", true, command);
         }

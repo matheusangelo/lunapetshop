@@ -7,7 +7,7 @@ namespace LunaPetShop.Domain.Entities
 
         public User()
         {
-            this.Pets = new List<Pet>();
+            this.Pets = new HashSet<Pet>();
         }
 
         public User(string name, string surName, string email, string password)
@@ -16,14 +16,13 @@ namespace LunaPetShop.Domain.Entities
             SurName = surName;
             Email = email;
             Password = password;
-            Pets = new List<Pet>();
         }
 
         public string Name { get; set; }
         public string SurName { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
-        public List<Pet> Pets { get; set; }
+        public ICollection<Pet> Pets { get; set; }
 
     }
 }

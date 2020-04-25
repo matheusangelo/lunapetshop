@@ -36,6 +36,7 @@ namespace LunaPetShop.Domain.Infra.Repository
         {
             return _lunaPetShopContext.pets
                                 .AsNoTracking()
+                                .Include(p => p.User)
                                 .Where(PetQuery.GetAllByEmail(Email))
                                 .ToList();
         }
@@ -43,7 +44,8 @@ namespace LunaPetShop.Domain.Infra.Repository
         public Pet GetPetById(Guid Id)
         {
             return _lunaPetShopContext.pets
-                                      .AsNoTracking()
+                                      .Include(x=>x.User)
+                                      .ThenInclude(u=>u.Pets)
                                       .Where(PetQuery.GetPetbyId(Id))
                                       .FirstOrDefault();
         }

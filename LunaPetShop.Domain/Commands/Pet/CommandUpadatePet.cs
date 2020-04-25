@@ -8,7 +8,11 @@ namespace LunaPetShop.Domain.Commands
 {
     public class CommandUpdatePet : Notifiable, ICommand
     {
-        public CommandUpdatePet(Guid id, string name, double weigth, int age, string sex, string breed, bool castrated, double size, User user)
+        public CommandUpdatePet()
+        {
+            
+        }
+        public CommandUpdatePet(Guid id, string name, double weigth, int age, string sex, string breed, bool castrated, double size)
         {
             Id = id;
             Name = name;
@@ -18,7 +22,6 @@ namespace LunaPetShop.Domain.Commands
             Breed = breed;
             Castrated = castrated;
             Size = size;
-            User = user;
         }
 
         public Guid Id { get; set; }
@@ -29,13 +32,11 @@ namespace LunaPetShop.Domain.Commands
         public string Breed { get; set; }
         public bool Castrated { get; set; }
         public double Size { get; set; }
-        public User User { get; set; }
         public void Validate()
         {
             AddNotifications(
                     new Contract()
                     .HasMinLen(Name, 3, "Name", "Name should have at least 3 chars")
-                    .IsNotNull(User,"User","User not null")
                 );
         }
     }

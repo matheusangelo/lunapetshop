@@ -3,12 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using LunaPetShop.Domain.Commands;
-using LunaPetShop.Domain.Commands.Contracts;
-using LunaPetShop.Domain.Entities;
 using LunaPetShop.Domain.Handlers;
 using LunaPetShop.Domain.Repository;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 
 namespace LunaPetShop.Domain.Api.Controllers
 {
@@ -23,7 +20,7 @@ namespace LunaPetShop.Domain.Api.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> Post([FromBody] CommandCreatePet command,
+        public ActionResult Post([FromBody] CommandCreatePet command,
                                              [FromServices] CreatePetHandler handler)
         {
             var result = (CommandResult)handler.handle(command);
@@ -35,22 +32,37 @@ namespace LunaPetShop.Domain.Api.Controllers
         }
 
         [HttpDelete]
-        public async Task<ActionResult> Delete([FromBody] CommandDeletePet command,
-                                               [FromServices] DeletePetHandler handler)
+        [Route("{Id}")]
+        public ActionResult Delete(Guid Id, [FromServices] DeletePetHandler handler)
         {
-            var result = (CommandResult)handler.handle(command);
+            try
+            {
+                var commandDeletePet = new CommandDeletePet(Id);
+                var result = (CommandResult)handler.handle(commandDeletePet);
 
-            if (!result.Success)
-                return BadRequest(result);
+                if (!result.Success)
+                    return BadRequest(result);
 
-            return Ok(result);
+
+                return Ok(result);
+
+            }
+            catch (Exception err)
+            {
+                return BadRequest(err);
+            }
+
+
         }
 
 
         [HttpPut]
-        public async Task<ActionResult> Put([FromBody] CommandUpdatePet command,
-                                            [FromServices] UpdatePetHandler handler)
+        [Route("{Id}")]
+
+        public ActionResult Put([FromBody] CommandUpdatePet command,
+                                [FromServices] UpdatePetHandler handler)
         {
+            
             var result = (CommandResult)handler.handle(command);
 
             if (!result.Success)
@@ -60,7 +72,7 @@ namespace LunaPetShop.Domain.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult> GetAll()
+        public ActionResult GetAll()
         {
             return Ok(_petRepository.GetAllByEmail("matheusangelo10@gmail.com"));
         }

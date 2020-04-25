@@ -17,6 +17,7 @@ using Microsoft.EntityFrameworkCore.InMemory;
 using Microsoft.EntityFrameworkCore;
 using LunaPetShop.Domain.Handlers;
 using LunaPetShop.Domain.Infra.Respositories;
+using Newtonsoft.Json;
 
 namespace LunaPetShop.Domain.Api
 {
@@ -34,13 +35,22 @@ namespace LunaPetShop.Domain.Api
         {
             services.AddControllers();
 
+            services.AddMvc()
+             .AddNewtonsoftJson(
+                options =>
+                {
+                    options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
+                });
             services.AddDbContext<LunaPetShopContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("connectionString")));
             // services.AddDbContext<LunaPetShopContext>(x => x.UseInMemoryDatabase("database"));
 
-            //Services
+            //Users Services
             services.AddScoped<CreateUserHandler, CreateUserHandler>();
-            services.AddScoped<CreatePetHandler, CreatePetHandler>();
 
+            //Pets Services
+            services.AddScoped<CreatePetHandler, CreatePetHandler>();
+            services.AddScoped<DeletePetHandler, DeletePetHandler>();
+            services.AddScoped<UpdatePetHandler, UpdatePetHandler>();
 
 
             //Contracts

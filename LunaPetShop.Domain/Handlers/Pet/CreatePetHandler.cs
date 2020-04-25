@@ -39,7 +39,7 @@ namespace LunaPetShop.Domain.Handlers
 
             _petRepository.AddPet(pet);
 
-            return new CommandResult("Pet Created", true, command);
+            return new CommandResult("Pet Created", true, pet);
         }
     }
 }
