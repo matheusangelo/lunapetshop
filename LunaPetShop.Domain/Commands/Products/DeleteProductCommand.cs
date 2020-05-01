@@ -1,11 +1,10 @@
 using Flunt.Notifications;
 using Flunt.Validations;
 using LunaPetShop.Domain.Commands.Contracts;
-using MediatR;
 
 namespace LunaPetShop.Domain.Commands.Produtcs
 {
-    public class CreateProductCommand : Notifiable, IRequest<CommandResult>
+    public class DeleteProductCommand : Notifiable, ICommand
     {
         public string Name { get; set; }
         public double Price { get; set; }

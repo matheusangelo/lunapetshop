@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "l7dp01tMGtPCUqVSU6Y1pJlmaU2PL4vDF4IGeJm4gCBW4drSXSyFXKibVYB+PzqX9HbDoH6M35XqwInLcWx6vg==",
+  "dgSpecHash": "DK7mDcoiawj08gE2k3HJPgQRnWPZIItUimZRqpu1oibOrWDd2DgvHcHAD1QR0RD9k6WH9oSN62G6+WAYZNHTfg==",
   "success": true,
   "projectFilePath": "C:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain.Infra\\LunaPetShop.Domain.Infra.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rslai\\.nuget\\packages\\flunt\\1.0.4\\flunt.1.0.4.nupkg.sha512",
+    "C:\\Users\\rslai\\.nuget\\packages\\mediatr\\8.0.1\\mediatr.8.0.1.nupkg.sha512",
     "C:\\Users\\rslai\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\rslai\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Users\\rslai\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

@@ -1,28 +1,32 @@
+using System.Threading;
+using System.Threading.Tasks;
 using LunaPetShop.Domain.Commands;
 using LunaPetShop.Domain.Commands.Contracts;
 using LunaPetShop.Domain.Commands.Produtcs;
 using LunaPetShop.Domain.Handlers.Contracts;
+using MediatR;
 
 namespace LunaPetShop.Domain.Handlers.Products
 {
-    public class CreateProductHandler : IHandler<CreateProductCommand>
+
+    public class CreateProductHandler : IRequestHandler<CreateProductCommand, CommandResult>
     {
         public CreateProductHandler()
         {
 
         }
 
-        public ICommandResult handle(CreateProductCommand command)
+        public Task<CommandResult> Handle(CreateProductCommand request, CancellationToken cancellationToken)
         {
             //fast fail validations
-            command.Validate();
+            request.Validate();
 
-            if (command.Invalid)
+            if (request.Invalid)
             {
-                return new CommandResult("Command invalid", false, command.Notifications);
+                return Task.FromResult(new CommandResult("Command invalid", false, request.Notifications));
             }
 
-            return new CommandResult("Product created", true, command);
+            return Task.FromResult(new CommandResult("Product created", true, request));
         }
     }
 }

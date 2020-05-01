@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain.Tests\\LunaPetShop.Domain.Tests.csproj": {}
+    "C:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain.Tests\\LunaPetShop.Domain.Tests.csproj": {}
   },
   "projects": {
-    "c:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain.Tests\\LunaPetShop.Domain.Tests.csproj": {
+    "C:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain.Tests\\LunaPetShop.Domain.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain.Tests\\LunaPetShop.Domain.Tests.csproj",
+        "projectUniqueName": "C:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain.Tests\\LunaPetShop.Domain.Tests.csproj",
         "projectName": "LunaPetShop.Domain.Tests",
-        "projectPath": "c:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain.Tests\\LunaPetShop.Domain.Tests.csproj",
+        "projectPath": "C:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain.Tests\\LunaPetShop.Domain.Tests.csproj",
         "packagesPath": "C:\\Users\\rslai\\.nuget\\packages\\",
-        "outputPath": "c:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain.Tests\\obj\\",
+        "outputPath": "C:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rslai\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,8 +27,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "c:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain\\LunaPetShop.Domain.csproj": {
-                "projectPath": "c:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain\\LunaPetShop.Domain.csproj"
+              "C:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain\\LunaPetShop.Domain.csproj": {
+                "projectPath": "C:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain\\LunaPetShop.Domain.csproj"
               }
             }
           }
@@ -82,14 +82,14 @@
         }
       }
     },
-    "c:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain\\LunaPetShop.Domain.csproj": {
+    "C:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain\\LunaPetShop.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain\\LunaPetShop.Domain.csproj",
+        "projectUniqueName": "C:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain\\LunaPetShop.Domain.csproj",
         "projectName": "LunaPetShop.Domain",
-        "projectPath": "c:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain\\LunaPetShop.Domain.csproj",
+        "projectPath": "C:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain\\LunaPetShop.Domain.csproj",
         "packagesPath": "C:\\Users\\rslai\\.nuget\\packages\\",
-        "outputPath": "c:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain\\obj\\",
+        "outputPath": "C:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rslai\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -116,6 +116,10 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
