@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DK7mDcoiawj08gE2k3HJPgQRnWPZIItUimZRqpu1oibOrWDd2DgvHcHAD1QR0RD9k6WH9oSN62G6+WAYZNHTfg==",
+  "dgSpecHash": "iaQc5kSu+3NgcArW5500IzeK0JU0Y1Gxfi7awQBeJc8VryZS1pSbb0OR4a1zuVtLZPQ4K3YcYlzhLGmzo/wMZQ==",
   "success": true,
-  "projectFilePath": "C:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain.Infra\\LunaPetShop.Domain.Infra.csproj",
+  "projectFilePath": "c:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain.Infra\\LunaPetShop.Domain.Infra.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rslai\\.nuget\\packages\\flunt\\1.0.4\\flunt.1.0.4.nupkg.sha512",
     "C:\\Users\\rslai\\.nuget\\packages\\mediatr\\8.0.1\\mediatr.8.0.1.nupkg.sha512",

@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "HKjl7tezoFgTkJPVxd3a0YTwtVDAyPTvHYrb2eSTJI6Ti8yJp1pW7vnr3fyCKl6Kp1Y6WYn0O7IBzCBswMBBvw==",
+  "dgSpecHash": "NYtJt53UpqW4dZ4pwOAnvsrzdwjvAtPQCjXvRvKwMTXeCFtkg3fdQeoSrSad6bxjCm76g4lyhzc9stw2szdc+w==",
   "success": true,
-  "projectFilePath": "C:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain.Api\\LunaPetShop.Domain.Api.csproj",
+  "projectFilePath": "c:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain.Api\\LunaPetShop.Domain.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rslai\\.nuget\\packages\\flunt\\1.0.4\\flunt.1.0.4.nupkg.sha512",
     "C:\\Users\\rslai\\.nuget\\packages\\mediatr\\8.0.1\\mediatr.8.0.1.nupkg.sha512",
+    "C:\\Users\\rslai\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\8.0.0\\mediatr.extensions.microsoft.dependencyinjection.8.0.0.nupkg.sha512",
     "C:\\Users\\rslai\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.0\\microsoft.aspnetcore.jsonpatch.3.1.0.nupkg.sha512",
     "C:\\Users\\rslai\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.1.0\\microsoft.aspnetcore.mvc.newtonsoftjson.3.1.0.nupkg.sha512",
     "C:\\Users\\rslai\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",

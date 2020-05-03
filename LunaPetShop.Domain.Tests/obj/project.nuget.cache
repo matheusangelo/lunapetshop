@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "l+wA0a1X9HD56uBrNPRgEnp3+bIdio2yTApi5vQmWzsAAaw9fsFJ2hYaezOkX6KDYGg/byDgzbXGBQH1a5C7mw==",
+  "dgSpecHash": "PLte82phYsCnI46scaZRu00kWWek63ITldKY3ZyLFgVBRK1U874SMYDDU458CT0CnDep8NDhO3NpClvBsWeHyQ==",
   "success": true,
-  "projectFilePath": "C:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain.Tests\\LunaPetShop.Domain.Tests.csproj",
+  "projectFilePath": "c:\\Pessoal\\Dev\\.NET\\LunaPetShop\\LunaPetShop.Domain.Tests\\LunaPetShop.Domain.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rslai\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",
     "C:\\Users\\rslai\\.nuget\\packages\\flunt\\1.0.4\\flunt.1.0.4.nupkg.sha512",

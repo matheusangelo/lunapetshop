@@ -18,6 +18,7 @@ using Microsoft.EntityFrameworkCore;
 using LunaPetShop.Domain.Handlers;
 using LunaPetShop.Domain.Infra.Respositories;
 using Newtonsoft.Json;
+using MediatR;
 
 namespace LunaPetShop.Domain.Api
 {
@@ -34,6 +35,7 @@ namespace LunaPetShop.Domain.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddMediatR(typeof(Startup));
 
             services.AddMvc()
              .AddNewtonsoftJson(
