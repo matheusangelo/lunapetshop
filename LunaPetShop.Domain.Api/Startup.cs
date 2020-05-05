@@ -19,6 +19,8 @@ using LunaPetShop.Domain.Handlers;
 using LunaPetShop.Domain.Infra.Respositories;
 using Newtonsoft.Json;
 using MediatR;
+using System.Reflection;
+using LunaPetShop.Domain.Handlers.Products;
 
 namespace LunaPetShop.Domain.Api
 {
@@ -50,14 +52,19 @@ namespace LunaPetShop.Domain.Api
             services.AddScoped<CreateUserHandler, CreateUserHandler>();
 
             //Pets Services
+
             services.AddScoped<CreatePetHandler, CreatePetHandler>();
             services.AddScoped<DeletePetHandler, DeletePetHandler>();
             services.AddScoped<UpdatePetHandler, UpdatePetHandler>();
 
+            //Products
+            services.AddScoped<CreateProductHandler, CreateProductHandler>();
 
             //Contracts
             services.AddScoped<IPetRepository, PetRepository>();
             services.AddScoped<IUserRepository, UserRepository>();
+
+            services.AddMediatR(Assembly.GetExecutingAssembly());
 
         }
 

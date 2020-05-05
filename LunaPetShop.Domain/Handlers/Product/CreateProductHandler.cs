@@ -9,24 +9,25 @@ using MediatR;
 namespace LunaPetShop.Domain.Handlers.Products
 {
 
-    public class CreateProductHandler : IRequestHandler<CreateProductCommand, CommandResult>
+    public class CreateProductHandler : IHandler<CreateProductCommand>
     {
+        private readonly IProductRespository _productRespository;
         public CreateProductHandler()
         {
 
         }
 
-        public Task<CommandResult> Handle(CreateProductCommand request, CancellationToken cancellationToken)
+        public ICommandResult handle(CreateProductCommand command)
         {
             //fast fail validations
-            request.Validate();
+            command.Validate();
 
-            if (request.Invalid)
+            if (command.Invalid)
             {
-                return Task.FromResult(new CommandResult("Command invalid", false, request.Notifications));
+                return new CommandResult("Command invalid", false, command.Notifications);
             }
 
-            return Task.FromResult(new CommandResult("Product created", true, request));
+            return new CommandResult("Product created", true, command);
         }
     }
 }
