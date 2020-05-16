@@ -25,27 +25,22 @@ namespace LunaPetShop.Domain.Infra.Respositories
 
         public void Delete(Product product)
         {
-            throw new NotImplementedException();
-        }
-
-        public Product GetByEmail(string Email)
-        {
-            throw new NotImplementedException();
+            _lunaPetShopContext.products.Remove(product);
+            _lunaPetShopContext.SaveChanges();
         }
 
         public Product GetById(Guid Id)
         {
-            throw new NotImplementedException();
+            return _lunaPetShopContext.products
+                                      .AsQueryable()
+                                      .Where(ProductQuery.GetById(Id))
+                                      .FirstOrDefault();
         }
-
-        public List<Product> GetByUserId(Guid Id)
-        {
-            throw new NotImplementedException();
-        }
-
         public void Update(Product product)
         {
-            throw new NotImplementedException();
+            _lunaPetShopContext.Entry(product).State = EntityState.Modified;
+            _lunaPetShopContext.SaveChanges();
+
         }
     }
 }

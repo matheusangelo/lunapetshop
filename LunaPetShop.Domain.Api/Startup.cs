@@ -59,6 +59,7 @@ namespace LunaPetShop.Domain.Api
 
             //Products
             services.AddScoped<CreateProductHandler, CreateProductHandler>();
+            services.AddScoped<DeleteProductHandler, DeleteProductHandler>();
 
             //Contracts
             services.AddScoped<IPetRepository, PetRepository>();

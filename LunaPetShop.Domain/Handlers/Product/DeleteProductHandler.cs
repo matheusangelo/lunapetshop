@@ -1,28 +1,36 @@
+using System;
 using LunaPetShop.Domain.Commands;
 using LunaPetShop.Domain.Commands.Contracts;
 using LunaPetShop.Domain.Commands.Produtcs;
 using LunaPetShop.Domain.Handlers.Contracts;
+using LunaPetShop.Domain.Repository;
 
 namespace LunaPetShop.Domain.Handlers.Products
 {
-    public class DeleteProductHandler : IHandler<DeleteProductCommand>
+    public class DeleteProductHandler
     {
-        public DeleteProductHandler()
+        public readonly IProductRespository _productRepository;
+
+        public DeleteProductHandler(IProductRespository productRespository)
         {
+            _productRepository = productRespository;
 
         }
 
-        public ICommandResult handle(DeleteProductCommand command)
+        public ICommandResult handle(Guid Id)
         {
-            //fast fail validations
-            command.Validate();
+            var command = _productRepository.GetById(Id);
 
-            if (command.Invalid)
+            //fast fail validations
+
+            if (command == null)
             {
-                return new CommandResult("Command invalid", false, command.Notifications);
+                return new CommandResult("Command invalid", false, command);
             }
 
-            return new CommandResult("Product created", true, command);
+            _productRepository.Delete(command);
+
+            return new CommandResult("Product Deleted", true, command);
         }
     }
 }
