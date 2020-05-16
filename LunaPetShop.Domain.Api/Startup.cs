@@ -63,6 +63,8 @@ namespace LunaPetShop.Domain.Api
             //Contracts
             services.AddScoped<IPetRepository, PetRepository>();
             services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IProductRespository, ProductRepository>();
+
 
             services.AddMediatR(Assembly.GetExecutingAssembly());
 

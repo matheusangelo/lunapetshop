@@ -4,14 +4,16 @@ using LunaPetShop.Domain.Infra.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace LunaPetShop.Domain.Infra.Migrations
 {
     [DbContext(typeof(LunaPetShopContext))]
-    partial class LunaPetShopContextModelSnapshot : ModelSnapshot
+    [Migration("20200505012843_addingtableProduct2")]
+    partial class addingtableProduct2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

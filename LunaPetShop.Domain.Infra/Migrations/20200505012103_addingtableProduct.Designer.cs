@@ -4,14 +4,16 @@ using LunaPetShop.Domain.Infra.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace LunaPetShop.Domain.Infra.Migrations
 {
     [DbContext(typeof(LunaPetShopContext))]
-    partial class LunaPetShopContextModelSnapshot : ModelSnapshot
+    [Migration("20200505012103_addingtableProduct")]
+    partial class addingtableProduct
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -70,34 +72,26 @@ namespace LunaPetShop.Domain.Infra.Migrations
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnName("ID")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<int>("Amount")
-                        .HasColumnName("AMOUNT")
                         .HasColumnType("int");
 
                     b.Property<string>("AnimalType")
-                        .IsRequired()
-                        .HasColumnName("ANIMAL_TYPE")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnName("NAME")
-                        .HasColumnType("varchar(150)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<double>("Price")
-                        .HasColumnName("PRICE")
                         .HasColumnType("float");
 
                     b.Property<double>("Reviews")
-                        .HasColumnName("REVIEWS")
                         .HasColumnType("float");
 
                     b.HasKey("Id");
 
-                    b.ToTable("PRODUCT");
+                    b.ToTable("products");
                 });
 
             modelBuilder.Entity("LunaPetShop.Domain.Entities.User", b =>
