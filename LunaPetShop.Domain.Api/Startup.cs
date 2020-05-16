@@ -37,7 +37,6 @@ namespace LunaPetShop.Domain.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddMediatR(typeof(Startup));
 
             services.AddMvc()
              .AddNewtonsoftJson(
@@ -60,6 +59,8 @@ namespace LunaPetShop.Domain.Api
             //Products
             services.AddScoped<CreateProductHandler, CreateProductHandler>();
             services.AddScoped<DeleteProductHandler, DeleteProductHandler>();
+            services.AddScoped<UpdateProductHandler, UpdateProductHandler>();
+
 
             //Contracts
             services.AddScoped<IPetRepository, PetRepository>();
@@ -67,7 +68,6 @@ namespace LunaPetShop.Domain.Api
             services.AddScoped<IProductRespository, ProductRepository>();
 
 
-            services.AddMediatR(Assembly.GetExecutingAssembly());
 
         }
 

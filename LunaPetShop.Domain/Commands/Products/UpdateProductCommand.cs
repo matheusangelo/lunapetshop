@@ -1,3 +1,4 @@
+using System;
 using Flunt.Notifications;
 using Flunt.Validations;
 using LunaPetShop.Domain.Commands.Contracts;
@@ -6,6 +7,8 @@ namespace LunaPetShop.Domain.Commands.Produtcs
 {
     public class UpdateProductCommand : Notifiable, ICommand
     {
+
+        public Guid Id { get; set; }
         public string Name { get; set; }
         public double Price { get; set; }
         public int Amount { get; set; }
@@ -16,8 +19,8 @@ namespace LunaPetShop.Domain.Commands.Produtcs
             AddNotifications(
                 new Contract()
                 .HasMinLen(Name, 3, "Name", "Name should have at least 3 chars")
-                .IsNull(Price, "Price", "The price should not be empty or null")
-                .IsNull(Amount, "Email", "Invalid Email")
+                .IsNotNull(Price, "Price", "The price should not be empty or not null")
+                .IsNotNull(Amount, "Amount", "Invalid Amount")
                 .HasMinLen(AnimalType, 3, "Email", "Invalid Email")
             );
         }

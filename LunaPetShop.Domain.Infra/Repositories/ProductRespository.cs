@@ -29,6 +29,13 @@ namespace LunaPetShop.Domain.Infra.Respositories
             _lunaPetShopContext.SaveChanges();
         }
 
+        public ICollection<Product> GetAll()
+        {
+            return _lunaPetShopContext.products
+                                      .AsNoTracking()
+                                      .ToList();
+        }
+
         public Product GetById(Guid Id)
         {
             return _lunaPetShopContext.products

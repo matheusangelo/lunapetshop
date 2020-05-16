@@ -10,6 +10,8 @@ namespace LunaPetShop.Domain.Repository
         void Add(Product product);
         void Delete(Product product);
         void Update(Product product);
+        ICollection<Product> GetAll();
+
 
     }
 }

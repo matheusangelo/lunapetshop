@@ -18,6 +18,11 @@ namespace LunaPetShop.Domain.Api.Controllers
     [Route("v1/product")]
     public class ProductController : ControllerBase
     {
+        private readonly IProductRespository _productRespository;
+        public ProductController(IProductRespository productRespository)
+        {
+            _productRespository = productRespository;
+        }
 
         [HttpPost]
         public async Task<ActionResult> Post(
@@ -40,6 +45,14 @@ namespace LunaPetShop.Domain.Api.Controllers
             {
                 return BadRequest(e);
             }
+        }
+
+        [HttpGet]
+        [Route("{Id}")]
+
+        public async Task<ActionResult> GetById(Guid Id)
+        {
+            return Ok(_productRespository.GetById(Id));
         }
 
         [HttpDelete]
@@ -65,6 +78,11 @@ namespace LunaPetShop.Domain.Api.Controllers
             }
         }
 
+        [HttpGet]
+        public async Task<ActionResult> GetAll()
+        {
+            return Ok(_productRespository.GetAll());
+        }
 
         [HttpPut]
         [Route("{Id}")]
@@ -73,7 +91,6 @@ namespace LunaPetShop.Domain.Api.Controllers
         {
             try
             {
-
                 var result = (CommandResult)handler.handle(command);
 
                 if (!result.Success)

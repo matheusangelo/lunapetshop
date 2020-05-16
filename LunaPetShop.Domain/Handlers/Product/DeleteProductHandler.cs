@@ -1,8 +1,6 @@
 using System;
 using LunaPetShop.Domain.Commands;
 using LunaPetShop.Domain.Commands.Contracts;
-using LunaPetShop.Domain.Commands.Produtcs;
-using LunaPetShop.Domain.Handlers.Contracts;
 using LunaPetShop.Domain.Repository;
 
 namespace LunaPetShop.Domain.Handlers.Products

@@ -1,12 +1,9 @@
-using System.Threading;
-using System.Threading.Tasks;
 using LunaPetShop.Domain.Commands;
 using LunaPetShop.Domain.Commands.Contracts;
 using LunaPetShop.Domain.Commands.Produtcs;
 using LunaPetShop.Domain.Entities;
 using LunaPetShop.Domain.Handlers.Contracts;
 using LunaPetShop.Domain.Repository;
-using MediatR;
 
 namespace LunaPetShop.Domain.Handlers.Products
 {
